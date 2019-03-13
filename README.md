@@ -16,10 +16,10 @@ Developing my own website, based on django framework.
 - [ ] Admin section
 - [ ] Registration panel
 - [ ] Getting pretty
-- [ ] Making 'resume' app
+- [ ] Making 'resume' app :cop:
 
 ## Authors
-Pawel Borowski
+Pawel Borowski :squirrel:
 
 ## License
 This project is licensed under the MIT License
