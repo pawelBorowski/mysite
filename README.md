@@ -1,4 +1,4 @@
-# Mystie: Django develop
+# Mysite: Django develop
 Developing my own website, based on django framework.
 
 ## Built With
