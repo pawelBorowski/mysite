@@ -4,13 +4,13 @@ posts = [
     {
         "author": "Maciek",
         "title": "First one post",
-        "context": "First post",
+        "content": "First post",
         "date_publish": "March 24, 2019"
     },
     {
         "author": "Tomek",
         "title": "Sec one post",
-        "context": "Sec post",
+        "content": "Sec post",
         "date_publish": "March 25, 2019"
     }
 ]
