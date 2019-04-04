@@ -2,24 +2,26 @@
 Developing my own website, based on django framework.
 
 ## Built With
-- Python 3.7.1
-- Django framework
-- Atom code editor
-- Anaconda package manager
-- Cmder console emulator
+- Python
+- Django
 - HTML
 - CSS
 - Bootstrap
+- Crispy forms
+- Atom code editor
+- Anaconda package manager
+- Cmder console emulator
 
 ## Versioning
 - [x] Basic structure
-- [ ] Admin section
-- [ ] Registration panel
+- [x] Admin section
+- [x] Registration panel
+- [ ] Login & logout system
 - [ ] Getting pretty
-- [ ] Making 'resume' app :cop:
+- [ ] Basic finish :cop:
 
 ## Authors
 Pawel Borowski :squirrel:
 
 ## License
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
