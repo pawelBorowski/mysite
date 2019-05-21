@@ -1,1 +1,11 @@
+ # folders
 media/
+blog/__pycache__/
+users/__pycache__/
+
+ # extensions
+*.pyc
+*.pyo
+
+ # database
+db.sqlite3
