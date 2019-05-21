@@ -11,6 +11,9 @@ users/__pycache__/
 *.pyc
 *.pyo
 
+# files
+posts.json
+
 
  # database
 /db/*.sqlite3
