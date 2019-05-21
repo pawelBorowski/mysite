@@ -1,15 +1,16 @@
- # folders
+ # folders, logfiles and tempfiles
 media/
+/__pycache__/
 blog/__pycache__/
 users/__pycache__/
+/log/*.log
+/tmp/
+
 
  # extensions
 *.pyc
 *.pyo
 
- # ignore all logfiles and tempfiles
-/log/*.log
-/tmp
 
  # database
 /db/*.sqlite3
