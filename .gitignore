@@ -7,5 +7,10 @@ users/__pycache__/
 *.pyc
 *.pyo
 
+ # ignore all logfiles and tempfiles
+/log/*.log
+/tmp
+
  # database
+/db/*.sqlite3
 db.sqlite3
