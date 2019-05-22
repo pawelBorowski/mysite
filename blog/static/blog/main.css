@@ -13,8 +13,13 @@ ul {
 }
 
 .bg-steel {
-  /* background-color: #5f788a; */
-  background-color: #5B554E;
+  /* background-color: #5B554E; */
+  background-color: #ffccbc;
+}
+
+.bg-foo {
+  /* background-color: #5B554E; */
+  background-color: #7d7d7d;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -84,6 +89,12 @@ a.article-title:hover {
 .account-img2 {
   height: 24px;
   width: 24px;
+  margin-right: 8px;
+}
+
+.my-logo {
+  height: 72px;
+  width: 72px;
   margin-right: 8px;
 }
 

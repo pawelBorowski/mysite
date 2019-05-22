@@ -12,9 +12,9 @@
     <link rel="stylesheet" type= 'text/css' href="{% static 'blog/main.css' %}">
 
       {% if title %}
-        <title>Blog home  - {{ title }}</title>
+        <title>Pawel Borowski Demo Website  - {{ title }}</title>
       {% else %}
-        <title>Blog home</title>
+        <title>Pawel Borowski Demo Website</title>
       {% endif %}
   </head>
   <body>
@@ -22,18 +22,19 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-8" href="{% url "home" %}">pBorowski</a>
+          <a class="navbar-brand mr-5" href="{% url "home" %}">pBorowski</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url "home" %}">Home</a>
+              <a class="nav-item nav-link mr-5" href="{% url "home" %}">About</a>
+              <a class="nav-item nav-link" href="{% url "work" %}">Work</a>
               <a class="nav-item nav-link" href="{% url "blog-home" %}">Blog</a>
-              <a class="nav-item nav-link" href="{% url "blog-about" %}">About</a>
             </div>
 
 
+            {% if '/blog' in request.path %}
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}
@@ -45,6 +46,7 @@
                 <a class="nav-item nav-link" href="{% url "register" %}">Register</a>
               {% endif %}
             </div>
+            {% endif %}
 
           </div>
         </div>
@@ -53,32 +55,36 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12"> <!-- main view width -->
 
-          {% if messages %}
-            {% for message in messages %}
-              <div class="alert alert-{{ message.tags }}">
-                {{ message }}
-              </div>
-            {% endfor %}
-          {% endif %}
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
 
-          {% block content %}
-          {% endblock %}
-
-          <h2>CURRENT IN main.html - this is top most template - its everywhere</h2>
+              {% block content %}
+              {% endblock %}
 
         </div>
+      </div>    <!-- Row div cointainer end -->
 
-        {% block content2 %}
-        {% endblock %}
+      {% block main_content %}
 
-      </div>
+      {% endblock %}
 
     </main>
 
-    <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <footer class="page-footer small pt-5"> <!-- Footer -->
+        <div class="text-center py-3 text-info" style="background-color:#d0d6e2">
+            <p>©{%now "Y" %} <a class="text-success" href="localhost:8000">Paweł Borowski</a>. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

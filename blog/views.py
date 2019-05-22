@@ -14,6 +14,10 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
+def work(request):
+    return render(request, 'work.html', {"title": "Work"})
+
+
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'    # <app>/<model>_<viewtype>.html
@@ -72,7 +76,3 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         if self.request.user == post.author:
             return True
         return False
-
-
-def about(request):
-    return render(request, 'blog/about.html', {"title": "About"})
