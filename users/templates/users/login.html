@@ -1,4 +1,4 @@
-{% extends "blog/base.html" %}
+{% extends "main.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -14,7 +14,7 @@
         </fieldset>
         <div class="form-group">
           <button class="btn btn-outline-info" type="submit">Login</button>
-          <a class="small ml-2" href="{% url "password_reset" %}">Forgot your password?</a>          
+          <a class="small ml-2" href="{% url "password_reset" %}">Forgot your password?</a>
         </div>
       </form>
 
@@ -22,7 +22,6 @@
         <small class="text-muted">Need an account? <a class="ml-2" href="{% url "register" %}">Sign up now!</a>
         </small>
       </div>
-
 
     </div>
 

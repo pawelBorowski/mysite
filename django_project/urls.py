@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf import settings
+from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
@@ -43,7 +44,8 @@ urlpatterns = [
     path('password-reset-complete/',
          auth_views.PasswordResetCompleteView.as_view(template_name="users/password_reset_complete.html"),
          name="password_reset_complete"),
-    path('', include("blog.urls")),
+    path('blog/', include("blog.urls")),
+    path('', TemplateView.as_view(template_name='main.html'), name='home')
 ]
 
 if settings.DEBUG:
