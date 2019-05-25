@@ -1,9 +1,62 @@
 {% extends "main.html" %}
 {% block main_content %}
 
-<h2>ABOUT PAGE</h2>
+{% endblock main_content %}
 
-<div class="row pt-5 pb-5">
+{% block about_content %}
+
+<div class="row pt-5 pb-5" style="height: 350px">
+      <div class="col-md-4">
+      </div>
+    <div class="col-md-4 text-center">
+        <img class="rounded-circle up-to" src="/media/profile4.SVG">
+        <h5 class="font-weight-bold pt-4">Hi.</h5>
+        I'm a software developer based in Warsaw, Poland. I have a passion for web design and love to create for web and mobile devices.
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+
+<div class="row pt-5 pb-5" style="height: 150px">
+      <div class="col-md-4">
+      </div>
+    <div class="col-md-4 text-center">
+        <h1 class="font-weight-normal pt-4">What I can do.</h1>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+
+<div class="row pt-5 pb-5" style="height: 400px">
+      <div class="col-md-3">
+      </div>
+    <div class="col-md-3 text-center" style="top: 20%;">
+        <h5 class="font-weight-bold pt-4">Strong embedded develop</h5>
+        Here's a selection of some recent work. For more up to the minute work you can visit me on dribbble or twitter.
+    </div>
+    <div class="col-md-3">
+        <img class="coding" src="/media/coding.PNG">
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+<div class="row pt-5 pb-5" style="height: 450px">
+      <div class="col-md-3">
+      </div>
+    <div class="col-md-3 text-center">
+        <img class="coding" src="/media/app.PNG">
+    </div>
+    <div class="col-md-3 text-center" style="top: 20%;">
+        <h5 class="font-weight-bold pt-4">What I'm up to right now.</h5>
+        Here's a selection of some recent work. For more up to the minute work you can visit me on dribbble or twitter.
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+
+<div class="row w-auto pt-5 pb-5" style="height: 175px">
       <div class="col-md-4">
       </div>
     <div class="col-md-4 text-center">
@@ -14,4 +67,4 @@
     </div>
 </div>
 
-{% endblock main_content %}
+{% endblock about_content %}

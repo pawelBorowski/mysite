@@ -1,7 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
 body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
+  overflow-x: hidden;
+  /* font-family: 'Oswald', sans-serif !important; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,16 +18,15 @@ ul {
 
 .bg-steel {
   /* background-color: #5B554E; */
-  background-color: #ffccbc;
+  background-color: #70625F;
 }
 
-.bg-foo {
-  /* background-color: #5B554E; */
-  background-color: #7d7d7d;
+.active-nav {
+    color: #945341
 }
 
 .site-header .navbar-nav .nav-link {
-  /* color: #cbd5db; Home About buttons */
+  /* Home About buttons */
   color: #cbd5db
 }
 
@@ -92,10 +95,35 @@ a.article-title:hover {
   margin-right: 8px;
 }
 
+.font-change {
+    font-family: "Calibri", Garamond, 'Comic Sans MS';
+}
+
 .my-logo {
   height: 72px;
   width: 72px;
   margin-right: 8px;
+}
+
+.up-to {
+  height: 144px;
+  width: 144px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.coding {
+  height: 317px;
+  width: 500px;
+  /* margin-top: 8px;
+  margin-bottom: 8px; */
+}
+
+.app {
+  height: 322px;
+  width: 500px;
+  /* margin-top: 8px;
+  margin-bottom: 8px; */
 }
 
 .account-img-post {

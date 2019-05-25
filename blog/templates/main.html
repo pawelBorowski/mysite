@@ -16,23 +16,25 @@
       {% else %}
         <title>Pawel Borowski Demo Website</title>
       {% endif %}
+
   </head>
+
   <body>
 
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" style="height: 100px">
         <div class="container">
-          <a class="navbar-brand mr-5" href="{% url "home" %}">pBorowski</a>
+          <!-- <a class="navbar-brand mr-5" href="{% url "home" %}">pBorowski</a> -->
+          <a class="nav-item nav-link" href="{% url "home" %}"><img class="rounded-circle my-logo" src="/media/profile2.SVG"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link mr-5" href="{% url "home" %}">About</a>
-              <a class="nav-item nav-link" href="{% url "work" %}">Work</a>
-              <a class="nav-item nav-link" href="{% url "blog-home" %}">Blog</a>
+          <div class="collapse navbar-collapse font-change" id="navbarToggle">
+            <div class="navbar-nav mr-auto " style="font-size:1.15rem">
+              <a class="nav-item nav-link ml-4 " href="{% url "home" %}" {% if '/work' in request.path %} {% elif '/blog' in request.path %} {% else %}style="color:#a2aaaf" {% endif %}>About</a>
+              <a class="nav-item nav-link ml-4" href="{% url "work" %}" {% if '/work' in request.path %} style="color:#8e9599" {% endif %}>Work</a>
+              <a class="nav-item nav-link ml-4" href="{% url "blog-home" %}" {% if '/blog' in request.path %} style="color:#8e9599" {% endif %}>Blog</a>
             </div>
-
 
             {% if '/blog' in request.path %}
             <!-- Navbar Right Side -->
@@ -55,7 +57,7 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-12"> <!-- main view width -->
+        <div class="col-md-12 mt-5"> <!-- main view width -->
 
               {% if messages %}
                 {% for message in messages %}
@@ -72,14 +74,19 @@
       </div>    <!-- Row div cointainer end -->
 
       {% block main_content %}
-
       {% endblock %}
 
     </main>
 
+    {% block about_content %}
+    {% endblock %}
+
+    {% block work_content %}
+    {% endblock %}
+
     <footer class="page-footer small pt-5"> <!-- Footer -->
-        <div class="text-center py-3 text-info" style="background-color:#d0d6e2">
-            <p>©{%now "Y" %} <a class="text-success" href="localhost:8000">Paweł Borowski</a>. All rights reserved.</p>
+        <div class="text-center py-5 text-info font-weight-lighter" style="background-color:#ECE9DD; height: 125px">
+            <p>©{%now "Y" %} <a style="color:#777B99" href="localhost:8000">Paweł Borowski</a>. All rights reserved.</p>
         </div>
     </footer>
 
