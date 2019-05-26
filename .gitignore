@@ -1,18 +1,9 @@
- # folders, logfiles and tempfiles
-/__pycache__/
-blog/__pycache__/
-users/__pycache__/
-/log/*.log
-/tmp/
-
-
  # extensions
 *.pyc
 *.pyo
 
  # files
 posts.json
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

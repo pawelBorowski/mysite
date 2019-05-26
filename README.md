@@ -17,7 +17,7 @@ Developing my own website, based on django framework.
 - [x] Admin section
 - [x] Registration panel
 - [x] Login & logout system
-- [ ] Getting pretty
+- [x] Getting pretty
 - [ ] Basic finish :cop:
 
 ## Authors
