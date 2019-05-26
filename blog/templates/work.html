@@ -1,18 +1,53 @@
 {% extends "main.html" %}
 {% block content %}
 
-
-<div class="row pt-5 pb-5" style="height: 350px">
+<div class="row pt-5 pb-5" style="height: 400px">
       <div class="col-md-4">
       </div>
     <div class="col-md-4 text-center">
         <img class="rounded-circle up-to" src="/media/profile.SVG">
-        <h5 class="font-weight-bold pt-4">What I've been up to.</h5>
-        Here's a selection of some recent work. For more up to the minute work you can visit me on dribbble or twitter.
+        <h5 class="font-weight-bold pt-4 pb-2">What I've been up to.</h5>
+        Here's a selection of some recent work. Most of them are available on
+        <a style="color:#777B99" href="github.com/pborowski">my github profile page.</a>
     </div>
     <div class="col-md-4">
     </div>
 </div>
-
-
 {% endblock content %}
+
+
+{% block work_content %}
+
+    <div class="row pt-5 pb-5" style="background-color:#ddece9; height: auto">
+          <div class="col-md-4">
+          </div>
+        <div class="col-md-4 pt-5 text-center">
+            <img class="pb-2" src="/media/performanceApp.PNG">
+            <h5 class="font-weight-bold pt-5 pb-2">
+                Aircraft Performance
+            </h5>
+            <p>
+                Mobile application for calculating aircraft's perfomance parametres.
+            </p>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+    <div class="row pt-5 pb-5" style="background-color:#e9ddec; height: auto">
+          <div class="col-md-4">
+          </div>
+        <div class="col-md-4 pt-5 text-center">
+            <img class="pb-2" src="/media/performanceApp.PNG">
+            <h5 class="font-weight-bold pt-5 pb-2">
+                Aircraft Performance
+            </h5>
+            <p>
+                Mobile application for calculating aircraft's perfomance parametres.
+            </p>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+{% endblock %}
