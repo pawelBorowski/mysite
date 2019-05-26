@@ -1,5 +1,4 @@
  # folders, logfiles and tempfiles
-media/
 /__pycache__/
 blog/__pycache__/
 users/__pycache__/
