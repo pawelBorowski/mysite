@@ -1,4 +1,5 @@
 {% extends "main.html" %}
+{% load static %}
 {% block main_content %}
 
 {% endblock main_content %}
@@ -9,9 +10,9 @@
       <div class="col-md-4">
       </div>
     <div class="col-md-4 text-center">
-        <img class="rounded-circle up-to" src="/media/profile4.SVG">
+        <img class="rounded-circle up-to" src="{% static "blog/profile4.svg" %}">
         <h4 class="font-weight-bold pt-4 pb-4">Hi.</h4>
-        I'm young, motivated avionics student interested in software development. I have a passion for design applications,
+        I'm Paweł. Young, motivated avionics student interested in software development. I have a passion for design applications,
         work with embedded software and love to create for web and mobile devices. I also like to keep things nice & simple.
     </div>
     <div class="col-md-4">
@@ -38,7 +39,7 @@
         I feel right with C/C++, Qt, Python &ndash; engineering embedded & real time products.
     </div>
     <div class="col-md-3">
-        <img class="coding" src="/media/coding.PNG">
+        <img class="coding" src="{% static "blog/coding.png" %}">
     </div>
     <div class="col-md-3">
     </div>
@@ -48,7 +49,7 @@
       <div class="col-md-3">
       </div>
     <div class="col-md-3 text-center">
-        <img class="coding" src="/media/app.PNG">
+        <img class="coding" src="{% static "blog/app.png" %}">
     </div>
     <div class="col-md-3" style="top: 15%;">
         <h4 class="font-weight-lighter pt-1 pb-3 text-center">My vision</h4>

@@ -21,8 +21,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel " >
         <div class="container">
-          <!-- <a class="navbar-brand mr-5" href="{% url "home" %}">pBorowski</a> -->
-          <a class="nav-item nav-link" href="{% url "home" %}"><img class="rounded-circle my-logo" src="/media/profile2.SVG"></a>
+          <a class="nav-item nav-link" href="{% url "home" %}"><img class="rounded-circle my-logo" src="{% static "blog/profile2.svg" %}"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,7 +35,7 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}
-                <a class="nav-item nav-link" href="{% url "post-create" %}"><img class="rounded account-img2" src="/media/new_post.PNG"></a>
+                <a class="nav-item nav-link" href="{% url "post-create" %}"><img class="rounded account-img2" src="{% static "blog/new_post.png" %}"></a>
                 <a class="nav-item nav-link" href="{% url "profile" %}"><img class="rounded account-img2" src=" {{ user.profile.image.url }}">Profile</a>
                 <a class="nav-item nav-link" href="{% url "logout" %}">Logout</a>
               {% else %}

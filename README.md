@@ -1,16 +1,13 @@
-# Mysite: Django develop
-Developing my own website, based on django framework.
+# Mysite: Django Web Development with Python
+Developing my website, based on django framework, deployed on heroku.
 
 ## Built With
-- Python
-- Django
+- Python 3.7
+- Django 2.1
 - HTML
 - CSS
-- Bootstrap
-- Crispy forms
-- Atom code editor
-- Anaconda package manager
-- Cmder console emulator
+- Bootstrap 4
+- Atom Code Editor
 
 ## Versioning
 - [x] Basic structure
@@ -18,10 +15,9 @@ Developing my own website, based on django framework.
 - [x] Registration panel
 - [x] Login & logout system
 - [x] Getting pretty
-- [ ] Basic finish :cop:
+- [x] AWS S3 File Storage
+- [ ] Heroku deployment
+- [ ] Basic finish  :cop:
 
-## Authors
-Pawel Borowski :squirrel:
-
-## License
-This project is licensed under the MIT License.
+## Author
+Pawel Borowski  :squirrel:

@@ -1,14 +1,15 @@
 {% extends "main.html" %}
+<!-- {% load static %} -->
 {% block content %}
 
 <div class="row pt-5 pb-5" style="height: 400px">
       <div class="col-md-4">
       </div>
     <div class="col-md-4 text-center">
-        <img class="rounded-circle up-to" src="/media/profile.SVG">
+        <img class="rounded-circle up-to" src="{% static "blog/profile.svg" %}">
         <h5 class="font-weight-bold pt-4 pb-2">What I've been up to.</h5>
         Here's a selection of some recent work. Most of them are available on
-        <a style="color:#777B99" href="github.com/pborowski">my github profile page.</a>
+        <a style="color:#777B99" href="http://www.github.com/pawelBorowski">my github profile page.</a>
     </div>
     <div class="col-md-4">
     </div>
@@ -22,7 +23,7 @@
           <div class="col-md-4">
           </div>
         <div class="col-md-4 pt-5 text-center">
-            <img class="pb-2" src="/media/performanceApp.PNG">
+            <img class="pb-2" src="{% static "blog/performanceApp.png" %}">
             <h5 class="font-weight-bold pt-5 pb-2">
                 Aircraft Performance
             </h5>
@@ -38,7 +39,7 @@
           <div class="col-md-4">
           </div>
         <div class="col-md-4 pt-5 text-center">
-            <img class="pb-2" src="/media/performanceApp.PNG">
+            <img class="pb-2" src="{% static "blog/performanceApp.png" %}">
             <h5 class="font-weight-bold pt-5 pb-2">
                 Aircraft Performance
             </h5>

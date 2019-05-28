@@ -2,8 +2,9 @@
 *.pyc
 *.pyo
 
- # files
+ # my configurartion files
 posts.json
+staticfiles/blog/profile_pics/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
