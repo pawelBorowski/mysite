@@ -4,7 +4,7 @@
 
  # my configurartion files
 posts.json
-staticfiles/blog/profile_pics/
+staticfiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
